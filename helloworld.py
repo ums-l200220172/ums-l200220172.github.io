@@ -1,5 +1,3 @@
-# ums-l200220172.github.io
-
 from metaflow import FlowSpec, step
 
 class CollegeFlow(FlowSpec):

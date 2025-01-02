@@ -6,7 +6,7 @@ import pandas as pd
 def load_data_group(num_docs):
     """Memuat data dari file data_group.csv"""
     # Pastikan path 'data_group.csv' sesuai
-    data_path = 'data_group.csv'
+    data_path = '/ums-l200220172.github.io/data_group.csv'
     
     # Membaca file CSV
     data = pd.read_csv(data_path)
