@@ -25,22 +25,28 @@
         }
 
         pre {
-            background-color: #bfe9f3;
+            background-color: #80e78a;
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
         }
 
         .analysis {
-            background-color: #c5f4b8;
+            background-color: #f595e2;
             padding: 15px;
-            border-left: 5px solid #3498db;
+            border-left: 5px solid #14364d;
         }
 
         .kesimpulan {
-            background-color: #e1f490;
+            background-color: #c7dcfd;
             padding: 15px;
-            border-left: 5px solid #cd34db;
+            border-left: 5px solid #6f1f76;
+        }
+
+        .file {
+            background-color: #eecf96;
+            padding: 15px;
+            border-left: 5px solid #710707;
         }
     </style>
 </head>
@@ -118,35 +124,42 @@ Cluster 5: halo
 
     <h2>Kesimpulan:</h2>
     <div class="kesimpulan">
-    <p>
-        Kesimpulannya, hasil clusterisasi menunjukkan bahwa data yang dianalisis memiliki tingkat variasi yang cukup
-        tinggi.
-        Pada klaster pertama (3 cluster), data masih tersebar antara istilah-istilah umum dan angka, yang menunjukkan
-        bahwa data tersebut mungkin memerlukan proses pembersihan atau pengolahan tambahan. Namun, ketika jumlah cluster
-        ditambah (4 dan 5 cluster), pola dalam data mulai menunjukkan peningkatan yang lebih signifikan.
+        <p>
+            Kesimpulannya, hasil clusterisasi menunjukkan bahwa data yang dianalisis memiliki tingkat variasi yang cukup
+            tinggi.
+            Pada klaster pertama (3 cluster), data masih tersebar antara istilah-istilah umum dan angka, yang
+            menunjukkan
+            bahwa data tersebut mungkin memerlukan proses pembersihan atau pengolahan tambahan. Namun, ketika jumlah
+            cluster
+            ditambah (4 dan 5 cluster), pola dalam data mulai menunjukkan peningkatan yang lebih signifikan.
 
-        Pada cluster dengan 4 grup, data mulai lebih terarah pada istilah-istilah yang terkait dengan tindakan atau
-        peran dalam komunikasi, seperti grup, penggunaan, dan keanggotaan, memberikan indikasi bahwa data mulai memiliki
-        pola yang lebih terstruktur. Sementara itu, pada cluster dengan 5 grup, data menjadi lebih spesifik, berfokus
-        pada tema-tema yang lebih jelas seperti kode, keamanan, pembelajaran, dan perubahan.
+            Pada cluster dengan 4 grup, data mulai lebih terarah pada istilah-istilah yang terkait dengan tindakan atau
+            peran dalam komunikasi, seperti grup, penggunaan, dan keanggotaan, memberikan indikasi bahwa data mulai
+            memiliki
+            pola yang lebih terstruktur. Sementara itu, pada cluster dengan 5 grup, data menjadi lebih spesifik,
+            berfokus
+            pada tema-tema yang lebih jelas seperti kode, keamanan, pembelajaran, dan perubahan.
 
-        Hal ini mengindikasikan bahwa dengan meningkatkan jumlah cluster, struktur data menjadi lebih terorganisir dan
-        lebih mudah dihubungkan dengan tema atau aktivitas yang lebih spesifik. Ini menekankan pentingnya proses
-        pembersihan dan pengolahan data untuk menghasilkan clusterisasi yang lebih jelas dan terstruktur.
-    </p>
+            Hal ini mengindikasikan bahwa dengan meningkatkan jumlah cluster, struktur data menjadi lebih terorganisir
+            dan
+            lebih mudah dihubungkan dengan tema atau aktivitas yang lebih spesifik. Ini menekankan pentingnya proses
+            pembersihan dan pengolahan data untuk menghasilkan clusterisasi yang lebih jelas dan terstruktur.
+        </p>
     </div>
     <h2>Daftar File Yang Digunakan: </h2>
-    <ul>
-        <li><strong>data_group.txt</strong>: Hasil export dari group aplikasi WhatsApp.</li>
-        <li><strong>data_group.csv</strong>: Hasil konversi dari txt ke csv.</li>
-        <li><strong>data_group.tar</strong>: File kompresi berupa TAR.</li>
-        <li><strong>scale_data.py</strong>: Untuk melakukan vektorisasi data.</li>
-        <li><strong>many_kmeans_flow.py</strong>: Coding untuk clustering metaflow menggunakan metode Kmeans.</li>
-        <li><strong>clean_data.py</strong>: Script untuk pembersihan data.</li>
-        <li><strong>clustering.py</strong>: Menampilkan hasil dari clusterisasi.</li>
-        <li><strong>scaled_data.py</strong>: Hasil dari vektorisasi data yang berupa angka numerik.</li>
-        <li><strong>cleaned_data.csv</strong>: Hasil dari pembersihan data.</li>
-    </ul>
+    <div class="file">
+        <ul>
+            <li><strong>data_group.txt</strong>: Hasil export dari group aplikasi WhatsApp.</li>
+            <li><strong>data_group.csv</strong>: Hasil konversi dari txt ke csv.</li>
+            <li><strong>data_group.tar</strong>: File kompresi berupa TAR.</li>
+            <li><strong>scale_data.py</strong>: Untuk melakukan vektorisasi data.</li>
+            <li><strong>many_kmeans_flow.py</strong>: Coding untuk clustering metaflow menggunakan metode Kmeans.</li>
+            <li><strong>clean_data.py</strong>: Script untuk pembersihan data.</li>
+            <li><strong>clustering.py</strong>: Menampilkan hasil dari clusterisasi.</li>
+            <li><strong>scaled_data.csv</strong>: Hasil dari vektorisasi data yang berupa angka numerik.</li>
+            <li><strong>cleaned_data.csv</strong>: Hasil dari pembersihan data.</li>
+        </ul>
+    </div>
 </body>
 
 </html>
